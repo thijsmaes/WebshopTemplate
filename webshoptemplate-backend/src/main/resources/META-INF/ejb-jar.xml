@@ -1,0 +1,11 @@
+<ejb-jar>
+    <assembly-descriptor>
+        <!-- to make sure javax.validation.ConstraintViolationException (functional exception) isn't logged 
+        as a technical exception in the JBoss logs - also see:
+        http://stackoverflow.com/questions/23486935/throwing-a-constraintviolationexception-in-an-interceptor -->
+        <application-exception>
+            <exception-class>javax.validation.ConstraintViolationException</exception-class>
+            <rollback>true</rollback> <!--  !!! ALWAYS SET THIS TO TRUE !!! -->
+        </application-exception>
+    </assembly-descriptor>
+</ejb-jar>

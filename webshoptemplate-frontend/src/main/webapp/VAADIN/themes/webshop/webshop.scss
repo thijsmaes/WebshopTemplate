@@ -1,0 +1,187 @@
+$v-luminance-threshold: 180 !default;
+
+$v-focus-color: #bd2730 !default;
+$v-error-indicator-color: #eb2977 !default;
+$v-friendly-color: rgb(54, 185, 85);
+
+$v-unit-size: 32px !default;
+$v-font-family: 'Open Sans', sans-serif;
+$v-font-size: 13px;
+$v-font-weight: 400 !default;
+$v-line-height: 21px;
+$v-color: #2f2f2f;
+
+$login-info-width: 300px !default;
+$login-info-opacity: 0.7 !default;
+$login-background-color: $editor-background-color !default;
+$login-background-image: "img/archetype-login-bg.jpg" !default;
+
+$editor-shadow: 0 0 10px 10px rgba(0, 0, 0, .1) !default;
+$editor-background-color: #3b3f42 !default;
+$editor-embed-background-color: darken($editor-background-color, 5%) !default;
+$editor-raised-background-color: lighten($editor-background-color, 10%) !default;
+$editor-caption-font-color: valo-font-color($editor-background-color, 0.5) !default;
+
+$valo-menu-background-color: $editor-background-color !default;
+
+$v-layout-margin-top: round($v-unit-size / 1.5) !default;
+$v-layout-margin-right: $v-layout-margin-top !default;
+$v-layout-margin-bottom: $v-layout-margin-top !default;
+$v-layout-margin-left: $v-layout-margin-top !default;
+$v-layout-spacing-vertical: round($v-unit-size / 1.8) !default;
+$v-layout-spacing-horizontal: round($v-unit-size / 1.8) !default;
+
+@import "../valo/valo";
+@import "fedasil-converted";
+@import "fedasil-overwrites";
+
+@mixin webshop {
+  @include valo;
+
+  $container-content-padding: 10px;
+  $container-margin: 10px;
+
+  .m-fieldset {
+    $top-shift: ($v-line-height / 2);
+
+    margin-top: $container-margin + $top-shift;
+    margin-bottom: $container-margin;
+    padding: 0 $container-content-padding $container-content-padding $container-content-padding;
+    overflow: visible; /* Show caption */
+
+    .m-fieldset-caption {
+      margin-top: -1 * $top-shift;
+      margin-left: 5px;
+      padding-left: 5px;
+      padding-right: 5px;
+      width: auto !important;
+      background-color: white;
+    }
+
+    .m-fieldset-error {
+      border: red;
+      margin-top: -1 * $top-shift;
+      margin-left: 5px;
+      padding-left: 5px;
+      padding-right: 5px;
+      width: auto !important;
+      background-color: red;
+    }
+  }
+
+
+  .m-panel {
+    margin-top: $container-margin;
+    margin-bottom: $container-margin;
+
+    .m-panel-caption-container-right {
+      float: right;
+      clear: both;
+    }
+    
+  .m-leftPosition{
+    float: left;
+  }
+  .m-rightPosition{
+      display: inline-block;
+      text-align: right;
+  }
+
+    .m-panel-content-container {
+      padding: $container-content-padding;
+    }
+  }
+
+  .m-button {
+    margin: 0;
+  }
+
+  .m-table {
+    display: table !important;
+  }
+
+  .m-table-row {
+    display: table-row !important;
+  }
+
+  .m-table-cell {
+    display: table-cell !important;
+  }
+
+  .m-entity-category-table {
+    width: 100%;
+  }
+
+  .m-entity-category-row {
+    width: 100%;
+  }
+
+  .m-button-primary {
+    &:hover {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2) inset;
+    }
+  }
+
+  .m-button-default {
+    color: #191919;
+    background-color: #efefef;
+    border-color: #c5c5c5;
+    text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.5);
+
+    &:hover {
+      color: #191919;
+      background-color: #efefef;
+      border-color: #b5b5b5;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1) inset;
+      text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  .m-cancel-button {
+    background: url("icons/Close.ico") no-repeat transparent;
+    border: 0px none;
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    right: 3px;
+    top: 6px;
+    z-index: 30;
+  }
+
+  .m-delete-button {
+    background: url("icons/Delete.ico") no-repeat transparent;
+    border: 0px none;
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    right: 3px;
+    top: 6px;
+    z-index: 30;
+  }
+
+  .m-modify-button {
+    background: url("icons/Edit.ico") no-repeat transparent;
+    border: 0px none;
+    cursor: pointer;
+    height: 18px;
+    right: 3px;
+    top: 6px;
+    width: 16px;
+    z-index: 30;
+  }
+
+  .m-save-button {
+    background: url("icons/Check.ico") no-repeat transparent;
+    border: 0px none;
+    cursor: pointer;
+    height: 18px;
+    right: 3px;
+    top: 6px;
+    width: 16px;
+    z-index: 30;
+  }
+
+  .m-search-criteria-container {
+    display: block;
+  }
+}

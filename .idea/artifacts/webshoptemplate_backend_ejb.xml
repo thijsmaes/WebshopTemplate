@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ejb-jar" name="webshoptemplate-backend:ejb">
+    <output-path>$PROJECT_DIR$/webshoptemplate-backend/target</output-path>
+    <root id="archive" name="webshoptemplate-backend-1.0-SNAPSHOT.jar">
+      <element id="artifact" artifact-name="webshoptemplate-backend:ejb exploded" />
+    </root>
+  </artifact>
+</component>

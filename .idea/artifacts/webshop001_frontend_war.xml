@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="webshop001-frontend:war">
+    <output-path>$PROJECT_DIR$/webshop001-frontend/target</output-path>
+    <root id="archive" name="webshop001-frontend-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="webshop001-frontend:war exploded" />
+    </root>
+  </artifact>
+</component>

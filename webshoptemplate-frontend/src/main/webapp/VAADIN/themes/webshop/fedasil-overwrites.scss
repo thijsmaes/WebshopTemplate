@@ -1,0 +1,87 @@
+/* Make margin auto work */
+#wrapper {
+  display: block !important;
+}
+
+/* Make the border-bottom align with ".be" */
+#blgm_belgiumHeader div.blgm_wrapper {
+  height: 38px !important;
+}
+
+#logo1, #logo2 {
+  height: 67px !important;
+}
+
+#footer-outer .v-label {
+  text-align: center;
+}
+
+.v-generated-body {
+  overflow-y: auto !important;
+}
+
+.v-layout {
+  display: block !important;
+}
+
+.v-tabsheet-tabs {
+  margin: 0 !important;
+  background: transparent !important;
+  border-bottom: 1px solid #c4c3bf;
+}
+
+.v-textfield-readonly {
+  border: none !important;
+}
+
+/* Remove base theme border */
+.m-language-button {
+  border: 0 !important;
+}
+
+/* Remove base theme background and border */
+.m-menu-button {
+  background: transparent !important;
+  border: 0 !important;
+}
+
+.m-menu-button > span {
+  display: block !important;
+  line-height: 21px !important;
+}
+
+.m-search-field {
+  box-sizing: content-box !important;
+}
+
+.m-submenu {
+  list-style-type: disc;
+}
+
+.m-submenu-item {
+  display: list-item;
+}
+
+.m-button {
+  float: none !important;
+  /*margin: 0 !important;*/
+  background-image: none !important;
+
+  &:hover {
+    float: none !important;
+  }
+}
+
+.m-panel-header-container {
+  cursor: auto !important;
+  box-sizing: content-box !important;
+  height: auto !important;
+}
+
+.m-panel-caption-container {
+  display: inline-block !important;
+}
+
+.m-panel-content-container {
+  height: auto !important;
+}

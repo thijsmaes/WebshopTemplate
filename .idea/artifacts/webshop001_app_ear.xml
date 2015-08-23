@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ear" name="webshop001-app:ear">
+    <output-path>$PROJECT_DIR$/webshop001-app/target</output-path>
+    <root id="archive" name="webshoptemplate-app-1.0-SNAPSHOT.ear">
+      <element id="artifact" artifact-name="webshop001-app:ear exploded" />
+    </root>
+  </artifact>
+</component>

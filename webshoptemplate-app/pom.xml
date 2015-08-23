@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <groupId>be.webshop</groupId>
+        <artifactId>shoptemplate</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>be.webshop</groupId>
+    <artifactId>webshoptemplate-app</artifactId>
+    <name>webshoptemplate-app</name>
+    <packaging>ear</packaging>
+
+
+<dependencies>
+    <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>webshoptemplate-frontend</artifactId>
+        <version>${project.version}</version>
+        <type>war</type>
+    </dependency>
+    <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>webshoptemplate-backend</artifactId>
+        <version>${project.version}</version>
+        <type>ejb</type>
+    </dependency>
+</dependencies>
+<build>
+    <plugins>
+        <plugin>
+            <artifactId>maven-ear-plugin</artifactId>
+            <version>2.8</version>
+            <configuration>
+                <defaultLibBundleDir>APP-INF/lib</defaultLibBundleDir>
+                <skinnyWars>true</skinnyWars>
+                <modules>
+                    <ejbModule>
+                        <groupId>${project.groupId}</groupId>
+                        <artifactId>webshoptemplate-backend</artifactId>
+                        <bundleDir>/</bundleDir>
+                    </ejbModule>
+                    <webModule>
+                        <groupId>${project.groupId}</groupId>
+                        <artifactId>webshoptemplate-frontend</artifactId>
+                        <bundleDir>/</bundleDir>
+                    </webModule>
+                </modules>
+                <generateApplicationXml>true</generateApplicationXml>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+</project>

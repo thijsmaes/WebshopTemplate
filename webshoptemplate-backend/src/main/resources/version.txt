@@ -1,0 +1,2 @@
+version=${pom.version}
+ejb.jndi.prefix=java:app/${project.build.finalName}/
