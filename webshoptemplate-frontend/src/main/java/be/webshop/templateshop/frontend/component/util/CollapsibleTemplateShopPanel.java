@@ -6,15 +6,15 @@ import com.vaadin.ui.Button;
 /**
  * @author tmaes
  */
-public class CollapsibleFedasilPanel extends FedasilPanel {
+public class CollapsibleTemplateShopPanel extends TemplateShopPanel {
 	private final ThemeResource expandIconResource;
 	private final ThemeResource collapseIconResource;
 
-	public CollapsibleFedasilPanel() {
+	public CollapsibleTemplateShopPanel() {
 		this(null);
 	}
 
-	public CollapsibleFedasilPanel(String caption) {
+	public CollapsibleTemplateShopPanel(String caption) {
 		super(caption);
 
 		expandIconResource = new ThemeResource("images/arrow_down.png");

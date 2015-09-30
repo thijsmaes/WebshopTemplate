@@ -20,5 +20,4 @@ public class ShopBuilder2 implements ComponentBuilder{
 		this.shopModel = shopModel;
 		return this;
 	}
-
 }

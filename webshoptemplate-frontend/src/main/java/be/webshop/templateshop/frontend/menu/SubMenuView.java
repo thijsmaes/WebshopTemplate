@@ -25,7 +25,7 @@ public class SubMenuView extends CssLayout {
 	private PagePresenter pagePresenter;
 	private Map<SubMenuItem, Button> menuItems = new LinkedHashMap<>();
 
-/**
+	/**
 	 * constructor giving the PagePresenter which will be notified when the user
 	 * chooses a submenu item.
 	 *
@@ -42,7 +42,7 @@ public class SubMenuView extends CssLayout {
 		setVisible(false);
 	}
 
-/**
+	/**
 	 * Pass the list of SubMenuItems to show. The UI will be updated inline.
 	 *
 	 * @param items
@@ -75,7 +75,6 @@ public class SubMenuView extends CssLayout {
 
 		@Override
 		public void buttonClick(ClickEvent event) {
-//			logger.debug("Submenu " + item.getCaptionCode() + " selected.");
 			pagePresenter.onSubMenuSelected(item);
 		}
 	}

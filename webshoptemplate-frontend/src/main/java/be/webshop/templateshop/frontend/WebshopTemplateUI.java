@@ -3,6 +3,7 @@ package be.webshop.templateshop.frontend;
 import javax.servlet.annotation.WebServlet;
 
 import be.webshop.templateshop.frontend.pages.HomePage;
+import be.webshop.templateshop.frontend.pages.Template;
 import be.webshop.templateshop.frontend.template.PagePresenter;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
@@ -32,7 +33,7 @@ public class WebshopTemplateUI extends UI {
 	@Override
 	protected void init(VaadinRequest request) {
 		CssLayout panel = new CssLayout();
-		HomePage homeView = new HomePage();
+		Template homeView = new Template();
 		homeView.setSizeUndefined();
 
 		Navigator navigator = new Navigator(getUI(), panel);

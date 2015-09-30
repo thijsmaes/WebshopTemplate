@@ -5,34 +5,34 @@ import com.vaadin.ui.Button;
 /**
  * @author tmaes
  */
-public class FedasilButton extends Button {
+public class TemplateShopButton extends Button {
 	public enum Style {
 		DEFAULT,
 		PRIMARY
 	}
 
-	public FedasilButton() {
+	public TemplateShopButton() {
 		this(Style.DEFAULT);
 	}
 
-	public FedasilButton(String caption) {
+	public TemplateShopButton(String caption) {
 		this(Style.DEFAULT, caption);
 	}
 
-	public FedasilButton(String caption, ClickListener listener) {
+	public TemplateShopButton(String caption, ClickListener listener) {
 		this(Style.DEFAULT, caption, listener);
 	}
 
-	public FedasilButton(Style style) {
+	public TemplateShopButton(Style style) {
 		this(style, null);
 	}
 
-	public FedasilButton(Style style, String caption) {
+	public TemplateShopButton(Style style, String caption) {
 		super(caption);
 		init(style);
 	}
 
-	public FedasilButton(Style style, String caption, ClickListener listener) {
+	public TemplateShopButton(Style style, String caption, ClickListener listener) {
 		super(caption, listener);
 		init(style);
 	}

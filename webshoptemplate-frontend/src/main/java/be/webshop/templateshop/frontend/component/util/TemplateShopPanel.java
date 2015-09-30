@@ -8,16 +8,16 @@ import com.vaadin.ui.Layout;
 /**
  * @author gvginder
  */
-public class FedasilPanel extends CssLayout {
+public class TemplateShopPanel extends CssLayout {
 	private final Label captionLabel;
 	private final Layout captionComponents;
 	private final Layout contentComponent;
 
-	public FedasilPanel() {
+	public TemplateShopPanel() {
 		this(null);
 	}
 
-	public FedasilPanel(String caption) {
+	public TemplateShopPanel(String caption) {
 		captionLabel = new Label();
 		captionLabel.setPrimaryStyleName("m-panel-caption");
 		captionLabel.setSizeUndefined();

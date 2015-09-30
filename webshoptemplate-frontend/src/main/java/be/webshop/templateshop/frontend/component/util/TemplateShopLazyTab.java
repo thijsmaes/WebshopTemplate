@@ -6,10 +6,10 @@ import com.vaadin.ui.CustomComponent;
 /**
  * @author gvginder
  */
-public abstract class FedasilLazyTab extends CustomComponent {
+public abstract class TemplateShopLazyTab extends CustomComponent {
 	private Component root;
 
-	public FedasilLazyTab() {
+	public TemplateShopLazyTab() {
 		setPrimaryStyleName("m-lazy-component");
 		setSizeUndefined();
 	}

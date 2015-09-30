@@ -8,15 +8,15 @@ import com.vaadin.ui.Layout;
 /**
  * @author gvginder
  */
-public class FedasilFieldset extends CssLayout {
+public class TemplateShopFieldset extends CssLayout {
 	private final Label captionLabel;
 	private final Layout contentComponent;
 
-	public FedasilFieldset() {
+	public TemplateShopFieldset() {
 		this(null);
 	}
 
-	public FedasilFieldset(String caption) {
+	public TemplateShopFieldset(String caption) {
 		captionLabel = new Label();
 		captionLabel.setPrimaryStyleName("m-fieldset-caption");
 		captionLabel.setSizeUndefined();

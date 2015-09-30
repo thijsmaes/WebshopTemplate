@@ -10,15 +10,5 @@ import com.vaadin.ui.Component;
  */
 public class ShopModel {
 
-	ShopView shopView;
-	ShopPresenter shopPresenter;
 
-	public ShopModel(){
-		shopView = new ShopViewImpl();
-		shopPresenter = new ShopPresenter(this, shopView);
-	}
-
-	public Component getView() {
-		return (ShopViewImpl) shopView;
-	}
 }

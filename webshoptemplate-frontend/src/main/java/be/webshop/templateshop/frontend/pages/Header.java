@@ -1,6 +1,5 @@
 package be.webshop.templateshop.frontend.pages;
 
-import be.webshop.templateshop.frontend.component.util.FedasilButton;
 import com.vaadin.server.ThemeResource;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.Image;

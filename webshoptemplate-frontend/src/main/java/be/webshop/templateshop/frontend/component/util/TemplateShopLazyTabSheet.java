@@ -10,13 +10,13 @@ import java.util.List;
 /**
  * @author tmaes
  */
-public class FedasilLazyTabSheet extends CssLayout {
+public class TemplateShopLazyTabSheet extends CssLayout {
 	private final List<Tab> tabs;
 
 	private final CssLayout captionContainer;
 	private final CssLayout contentContainer;
 
-	public FedasilLazyTabSheet() {
+	public TemplateShopLazyTabSheet() {
 		tabs = new LinkedList<>();
 
 		captionContainer = new CssLayout();
@@ -69,9 +69,9 @@ public class FedasilLazyTabSheet extends CssLayout {
 	}
 
 	private void setSelectedTab(Tab tab) {
-		if (tab.component instanceof FedasilLazyTab) {
-			FedasilLazyTab fedasilLazyTab = (FedasilLazyTab) tab.component;
-			fedasilLazyTab.load();
+		if (tab.component instanceof TemplateShopLazyTab) {
+			TemplateShopLazyTab templateShopLazyTab = (TemplateShopLazyTab) tab.component;
+			templateShopLazyTab.load();
 		}
 
 		contentContainer.removeAllComponents();
