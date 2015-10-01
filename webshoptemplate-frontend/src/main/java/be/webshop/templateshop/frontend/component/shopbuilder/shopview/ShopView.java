@@ -7,4 +7,6 @@ import com.vaadin.ui.Component;
  */
 public interface ShopView extends Component{
 	void createFilterPanel();
+
+	void createFilterMenu(JewelShopPresenter jewelShopPresenter);
 }

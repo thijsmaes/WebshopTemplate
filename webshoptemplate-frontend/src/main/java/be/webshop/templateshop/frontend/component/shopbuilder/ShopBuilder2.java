@@ -1,7 +1,7 @@
 package be.webshop.templateshop.frontend.component.shopbuilder;
 
 import be.webshop.templateshop.frontend.component.ComponentBuilder;
-import be.webshop.templateshop.frontend.component.shopbuilder.shopmodel.ShopModel;
+import be.webshop.templateshop.frontend.component.shopbuilder.shopview.*;
 import com.vaadin.ui.Component;
 
 /**
@@ -13,6 +13,9 @@ public class ShopBuilder2 implements ComponentBuilder{
 
 	@Override
 	public Component build() {
+		ShopView view = new ShopViewImpl();
+		ShopPresenter presenter= new JewelShopPresenter(shopModel, view);
+
 		return null;
 	}
 
