@@ -1,4 +1,4 @@
-package be.webshop.templatewebshop.backend.be.webshop.templatewebshop.backend.facade.impl;
+package be.webshop.templatewebshop.backend.facade.impl;
 
 import javax.ejb.Stateless;
 

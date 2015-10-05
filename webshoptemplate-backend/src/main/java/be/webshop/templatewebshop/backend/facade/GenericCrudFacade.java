@@ -1,4 +1,4 @@
-package be.webshop.templatewebshop.backend.be.webshop.templatewebshop.backend.facade;
+package be.webshop.templatewebshop.backend.facade;
 
 
 import java.util.List;
